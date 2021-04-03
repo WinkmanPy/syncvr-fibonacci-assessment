@@ -13,7 +13,7 @@ pip install flask
 * Set /Fibonacci as Current Working Directory
 
 ```bash
-export FLASK_APP=App.py
+export FLASK_APP=run.py
 export FLASK_DEBUG=1
 flask run
 ```
@@ -21,19 +21,7 @@ flask run
 ## Usage
 
 Access Fibonacci's sequence from browser.
-
-http://127.0.0.1:5000/fibonacci/5
-{   "5": 5  }
-
-http://127.0.0.1:5000/fibonacci/45
-{   "45": 1134903170    }
-
-Get history.
-http://127.0.0.1:5000/fibonacci/history
-{   5, 45   }
-
-Clear history.
-http://127.0.0.1:5000/fibonacci/clear
+http://127.0.0.1:5000/
 
 
 ## Design decisions
