@@ -1,6 +1,7 @@
 # Fibonacci
 
-Fibonacci is a simple Flask REST API that returns a given number from Fibonacci's sequence.
+Fibonacci is a simple app from Fibonacci's sequence.
+
 
 ## Installation
 
@@ -14,7 +15,7 @@ pip install flask
 
 ```bash
 export FLASK_APP=run.py
-export FLASK_DEBUG=1
+export FLASK_ENV=development
 flask run
 ```
 
