@@ -41,5 +41,5 @@ class Fibonacci:
         if str(n) in Fibonacci._fibonacci:
             return Fibonacci._fibonacci[str(n)]
         else:
-            return self.return_n(n-1) + self.return_n(n-2)
+            return self.return_n(int(n)-1) + self.return_n(int(n)-2)
     

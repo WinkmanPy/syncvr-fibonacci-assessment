@@ -20,18 +20,19 @@ flask run
 
 ## Usage
 
-Access Fibonacci's sequence from browser.
+Access Fibonacci's sequence from browser:
 http://127.0.0.1:5000/
 
+OR
+
+Access Fibonacci's api by running files from /Testing:
+```bash
+python Testing/api_test.py
+bash Testing/curl_test.sh
+```
 
 ## Design decisions
-Since I have some minor previous experience with Flask, I decided to build the API in Python.
-Since I don't have a lot of experience in web-design, I had to find out many new features and am therefore not used to best practices.
-Also, this is my first project I personally push to GitHub.
-
-For the fibonacci app, I decided the following:
-- App needs a home page
-- App needs a form
-- App needs a history section = Fibonacci._history
-- App needs to be able to reset history = Fibonacci.clear_history()
-
+- Built in Flask because of minor previous experience
+- Compute Fibonacci's numbers recursively
+- Enable fast lookup for intermediary steps for performance reasons
+- Catch errors for empty input field or wrong datatype on both UI as API
